@@ -28,7 +28,7 @@ from fastapi.responses import JSONResponse
 from common import doc_fix
 
 
-@app.post("/processing/inventory/{banknote_id}", tags=["inventory"])
+@app.post("/processing/inventory/{banknote_id}", tags=["processing"])
 @doc_fix
 async def inventory(banknote_id: str, banknote: Banknote):
     """
