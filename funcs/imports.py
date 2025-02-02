@@ -21,4 +21,4 @@ __status__ = "Develop"
 
 import funcs.example #!
 
-import funcs.processing
+import funcs.processing.inventory

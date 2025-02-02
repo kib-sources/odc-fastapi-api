@@ -30,7 +30,7 @@ from common import doc_fix
 
 @app.get("/processing/inventory/{banknote_id}")
 @doc_fix
-async def read_user(banknote_id: str, banknote: Banknote):
+async def inventory(banknote_id: str, banknote: Banknote):
     """
     [Смотри inventory]({{URL_ODC_DOC}}/docs/project3/functions/inventory_server)
 
