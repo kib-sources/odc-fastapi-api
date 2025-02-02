@@ -18,14 +18,14 @@ __status__ = "Develop"
 # __status__ = "Production"
 
 from funcs import app
-from objects.banknote import BanknoteHeader
+from objects.banknote import BanknoteHeader, Banknote
 
 from fastapi.responses import JSONResponse
 
 from common import doc_fix
 
 
-@app.post("/production/issuance/{banknote_id}")
+@app.post("/production/issuance/{banknote_id}", response_model=Banknote, tags=["production"])
 @doc_fix
 async def issuance(banknote_id: str, banknote_header: BanknoteHeader) -> JSONResponse:
     """
@@ -37,5 +37,5 @@ async def issuance(banknote_id: str, banknote_header: BanknoteHeader) -> JSONRes
     assert isinstance(banknote_header, BanknoteHeader)
     assert banknote_header.banknote_id == banknote_id
 
+    # TODO return Banknote(...)
     return JSONResponse("Not implemented yet", status_code=501)
-
