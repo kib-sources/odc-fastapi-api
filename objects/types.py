@@ -23,3 +23,6 @@ BANK_ID = str
 BANKNOTE_ID = str
 
 HASH = str
+
+# base64 строка
+KEY = str
