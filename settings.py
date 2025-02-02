@@ -6,8 +6,8 @@
 """
 
 __author__ = 'pavelmstu'
-__copyright__ = 'SG, 2024'
-__license__ = 'SG LLC'
+__copyright__ = 'KIB, 2025'
+__license__ = 'KIB'
 __credits__ = [
     'pavelmstu',
 ]
