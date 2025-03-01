@@ -1,0 +1,3 @@
+[submodule "odcblib"]
+	path = odcblib
+	url = git@github.com:kib-sources/odc-banknote-lib-python-mock.git
